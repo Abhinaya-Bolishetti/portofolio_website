@@ -1,128 +1,83 @@
-/* Reset default margin and padding */
-* {
+/* Global Dark Theme */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
-body {
-  background-color: #f5f5f5;
-  color: #333;
-  line-height: 1.6;
+a {
+  color: #00bcd4;
 }
 
-/* Header styles */
+a:hover {
+  color: #80deea;
+}
+
+nav.navbar {
+  background-color: #111;
+  padding: 1rem;
+}
+
+.nav-links li a {
+  color: #fff;
+}
+
+.nav-links li a:hover {
+  color: #00bcd4;
+}
+
+.hamburger .bar {
+  background-color: #fff;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+  border-bottom: 1px solid #222;
+}
+
+/* Header */
 header {
-  background-color: #6200ea;
-  color: white;
-  padding: 20px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #00bcd4;
+  margin-bottom: 1rem;
+}
+
+/* Project Cards */
+.project-card {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #00bcd4;
+}
+
+/* Slider */
+.slider {
+  background-color: #111;
+  padding: 2rem;
   text-align: center;
 }
 
-nav {
-  margin-top: 10px;
+.slide {
+  display: none;
 }
 
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
+.slide.active {
+  display: block;
 }
 
-
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Section styles */
-section {
-  padding: 40px;
-  max-width: 800px;
-  margin: auto;
-}
-
-h2 {
-  margin-bottom: 10px;
-  color: #6200ea;
-}
-.profile-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-top: 10px;
-  object-fit: cover;
-  border: 3px solid white;
-}
-.project-card {
-  background-color: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.project-card h3 {
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.project-card a {
-  color: #6200ea;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.project-card a:hover {
-  text-decoration: underline;
-}
-#resume a {
-  background-color: #6200ea;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 6px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-#resume a:hover {
-  background-color: #3700b3;
-}
-#contact p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-/* Mobile responsive */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 24px;
-  }
-
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .project-card {
-    padding: 15px;
-  }
-
-  section {
-    padding: 20px;
-  }
-
-  .profile-img {
-    width: 90px;
-    height: 90px;
-  }
+/* Footer */
+footer {
+  background-color: #111;
+  color: #888;
+  text-align: center;
+  padding: 1rem;
 }

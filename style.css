@@ -119,6 +119,15 @@ footer {
   .nav-links.show {
     display: flex;
   }
+  /* Slider Dots */
+.slider span {
+  transition: background 0.3s ease;
+}
+
+.slider span:hover {
+  background: #00bcd4;
+}
+
 
   .hamburger {
     display: flex;

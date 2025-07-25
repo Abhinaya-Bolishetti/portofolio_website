@@ -81,3 +81,47 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+/* Certification List */
+.certification-list p {
+  background-color: #1a1a1a;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+  border-left: 4px solid #00bcd4;
+  transition: background 0.3s;
+}
+
+.certification-list p:hover {
+  background-color: #2a2a2a;
+}
+
+/* Responsive Nav for Small Screens */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  height: 3px;
+  margin: 3px 0;
+  width: 25px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+

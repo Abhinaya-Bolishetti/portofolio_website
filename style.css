@@ -1,9 +1,10 @@
-/* Global */
+/* GLOBAL */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #000;
   color: #fff;
+  text-align: center;
 }
 
 a {
@@ -11,27 +12,18 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #80deea;
-}
-
-/* Navbar */
+/* NAVBAR */
 .navbar {
   background: #111;
   padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 1.2rem;
-  font-weight: bold;
+  position: sticky;
+  top: 0;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
+  justify-content: center;
   gap: 1.5rem;
 }
 
@@ -39,52 +31,18 @@ a:hover {
   color: #fff;
 }
 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
+/* HERO */
+.hero {
+  padding: 4rem 1rem 2rem;
 }
 
-.bar {
-  height: 3px;
-  width: 25px;
-  background: #fff;
-  margin: 4px 0;
+.hero h1 {
+  color: #00bcd4;
 }
 
-/* Slider */
-.slider {
-  background: #111;
-  padding: 3rem 1rem;
-  text-align: center;
-}
-
-.slide {
-  display: none;
-}
-
-.slide.active {
-  display: block;
-}
-
-.dot {
-  height: 10px;
-  width: 10px;
-  margin: 0 5px;
-  background: #777;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.dot.active {
-  background: #00bcd4;
-}
-
-/* Header */
-header {
-  text-align: center;
-  padding: 2rem;
+/* PROFILE */
+.profile {
+  padding: 2rem 1rem;
 }
 
 .profile-img {
@@ -93,9 +51,14 @@ header {
   border: 3px solid #00bcd4;
 }
 
-/* Sections */
+.tagline {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* SECTIONS */
 section {
-  padding: 2rem;
+  padding: 2rem 1rem;
   border-bottom: 1px solid #222;
 }
 
@@ -103,61 +66,50 @@ h2 {
   color: #00bcd4;
 }
 
-/* Projects */
+/* PROJECTS */
 .project-card {
   background: #1a1a1a;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
+  max-width: 700px;
   border-left: 4px solid #00bcd4;
-  transition: transform 0.3s;
 }
 
-.project-card:hover {
-  transform: translateY(-4px);
-}
-
-/* Certifications */
+/* CERTIFICATIONS */
 .certification-list p {
   background: #1a1a1a;
   padding: 0.75rem;
-  border-left: 4px solid #00bcd4;
+  margin: 0.5rem auto;
+  max-width: 500px;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   background: #111;
-  color: #888;
-  text-align: center;
   padding: 1rem;
+  color: #888;
 }
 
-/* Responsive */
+/* ANIMATIONS */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.fade-delay-1 { animation-delay: 0.2s; }
+.fade-delay-2 { animation-delay: 0.4s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .nav-links {
-    display: none;
-    flex-direction: column;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-
-  .hamburger {
-    display: flex;
+    flex-wrap: wrap;
   }
 }
-/* Profile Optimization */
-.profile {
-  padding: 1.5rem 1rem;
-}
-
-.profile h1 {
-  margin: 0.5rem 0 0.3rem;
-}
-
-.profile .tagline {
-  font-size: 0.95rem;
-  color: #ccc;
-  margin: 0;
-}
-

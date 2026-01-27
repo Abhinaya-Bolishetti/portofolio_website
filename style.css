@@ -27,10 +27,6 @@ a {
   gap: 1.5rem;
 }
 
-.nav-links li a {
-  color: #fff;
-}
-
 /* HERO */
 .hero {
   padding: 4rem 1rem 2rem;
@@ -38,27 +34,29 @@ a {
 
 .hero h1 {
   color: #00bcd4;
+  margin-bottom: 0.5rem;
 }
 
 /* PROFILE */
 .profile {
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem 3rem;
 }
 
 .profile-img {
   width: 150px;
   border-radius: 50%;
   border: 3px solid #00bcd4;
+  margin-bottom: 0.5rem;
 }
 
 .tagline {
-  color: #ccc;
   font-size: 0.95rem;
+  color: #ccc;
 }
 
 /* SECTIONS */
 section {
-  padding: 2rem 1rem;
+  padding: 2.5rem 1rem;
   border-bottom: 1px solid #222;
 }
 
@@ -69,17 +67,18 @@ h2 {
 /* PROJECTS */
 .project-card {
   background: #1a1a1a;
-  padding: 1rem;
-  margin: 1rem auto;
-  max-width: 700px;
+  padding: 1.2rem;
+  margin: 1.2rem auto;
+  max-width: 720px;
   border-left: 4px solid #00bcd4;
+  text-align: left;
 }
 
 /* CERTIFICATIONS */
 .certification-list p {
   background: #1a1a1a;
   padding: 0.75rem;
-  margin: 0.5rem auto;
+  margin: 0.6rem auto;
   max-width: 500px;
 }
 
@@ -111,5 +110,9 @@ footer {
 @media (max-width: 768px) {
   .nav-links {
     flex-wrap: wrap;
+  }
+
+  .project-card {
+    text-align: center;
   }
 }

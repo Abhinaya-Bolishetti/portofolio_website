@@ -10,8 +10,6 @@
 
 <!-- Navbar -->
 <nav class="navbar">
-  <a href="#home" class="logo">Abhinaya</a>
-
   <ul class="nav-links" id="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -28,35 +26,25 @@
   </div>
 </nav>
 
-<!-- Hero / Slider -->
-<div class="slide active">
-  <h2>Hi, I'm Abhinaya Bolishetti</h2>
-  <p>AI & ML Student | Java Developer</p>
-</div>
-
-    <div class="slide">
-      <h2>Artificial Intelligence & Machine Learning</h2>
-      <p>Building intelligent ML and CNN-based systems using Python</p>
-    </div>
-    <div class="slide">
-      <h2>Web Development</h2>
-      <p>Creating responsive websites using HTML, CSS & JavaScript</p>
-    </div>
-  </div>
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+  <h1 class="fade-up">Hi, I'm Abhinaya Bolishetti</h1>
+  <p class="fade-up fade-delay-1">
+    AI & ML Student | Java Developer
+  </p>
 </section>
 
-<!-- Profile -->
-<header class="profile">
+<!-- PROFILE -->
+<header class="profile fade-up fade-delay-2">
   <img src="profile.jpg" alt="Abhinaya Bolishetti" class="profile-img">
-  <h1>Abhinaya Bolishetti</h1>
+  <h2>Abhinaya Bolishetti</h2>
   <p class="tagline">
     AI & ML • Java • Web Development • Cybersecurity
   </p>
 </header>
 
-
-<!-- About -->
-<section id="about">
+<!-- ABOUT -->
+<section id="about" class="fade-up">
   <h2>About Me</h2>
   <p>
     I am a B.Tech Computer Science student specializing in Artificial Intelligence
@@ -65,85 +53,69 @@
   <p>
     I have a strong foundation in Java, Python, Data Structures, and Web Development,
     with hands-on experience in Machine Learning and CNN-based projects.
-    Currently, I am expanding my skills in Cybersecurity and Network Defense.
+    Currently learning Cybersecurity and Network Defense.
   </p>
 </section>
 
-<!-- Projects -->
-<section id="projects">
+<!-- PROJECTS -->
+<section id="projects" class="fade-up">
   <h2>Projects</h2>
 
   <div class="project-card">
-    <h3>Portfolio Website</h3>
-    <p>Designed and deployed a responsive personal portfolio website.</p>
-    <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-    <a href="https://github.com/Abhinaya-Bolishetti/portofolio_website" target="_blank">View on GitHub</a>
+    <h3>EcoBazaar – Carbon Aware Shopping Platform</h3>
+    <p>
+      Full-stack eco-friendly e-commerce platform that displays product carbon
+      footprints, suggests greener alternatives, and tracks sustainability impact.
+    </p>
+    <p><strong>Tech:</strong> Java, Spring Boot, Spring Security (JWT), MySQL, Angular</p>
+    <a href="https://github.com/Abhinaya-Bolishetti/Ecobazar" target="_blank">View on GitHub</a>
   </div>
 
   <div class="project-card">
-  <h3>AI Suspect Detection (CNN)</h3>
-  <p>
-    Developed a CNN-based image classification system to identify suspects
-    from image datasets. Implemented image preprocessing, feature extraction,
-    and model evaluation to improve prediction accuracy.
-  </p>
-  <p><strong>Tech:</strong> Python, TensorFlow, OpenCV</p>
-  <a href="https://github.com/Abhinaya-Bolishetti/Finding-Abductors-Using-AI" target="_blank">
-    View on GitHub
-  </a>
-</div>
+    <h3>AI Suspect Detection (CNN)</h3>
+    <p>
+      CNN-based image classification model to identify suspects from images using
+      preprocessing and evaluation techniques.
+    </p>
+    <p><strong>Tech:</strong> Python, TensorFlow, OpenCV</p>
+    <a href="https://github.com/Abhinaya-Bolishetti/Finding-Abductors-Using-AI" target="_blank">View on GitHub</a>
+  </div>
 
- <div class="project-card">
-  <h3>EcoBazaar – Carbon Footprint Aware Shopping Platform</h3>
-  <p>
-    Built a full-stack, carbon-aware e-commerce platform that helps users make
-    environmentally responsible purchasing decisions by displaying product
-    carbon footprints and suggesting greener alternatives.
-  </p>
-  <p>
-    Implemented secure authentication with JWT, role-based access control
-    (User, Seller, Admin), eco-rating calculations, smart cart carbon analysis,
-    and sustainability analytics dashboards.
-  </p>
-  <p><strong>Tech:</strong> Java, Spring Boot, Spring Security (JWT), MySQL, Angular</p>
-  <a href="https://github.com/Abhinaya-Bolishetti/Ecobazar" target="_blank">
-    View on GitHub
-  </a>
-</div>
-
-<!-- Certifications -->
-<section id="certifications">
-  <h2>Certifications</h2>
-
-  <div class="certification-list">
-    <p><a href="https://www.credly.com/badges/c5c35082-225d-4dc7-b211-d28f3ec9a3c7" target="_blank">🛡️ Network Defense – Cisco</a></p>
-    <p><a href="https://www.credly.com/badges/0c48802d-cbcd-47e5-b221-d75062151e0f" target="_blank">🤖 AI Fundamentals</a></p>
-    <p><a href="https://www.credly.com/badges/5c098ede-fd3b-45da-ad06-79877a913082" target="_blank">🐍 Crash Course on Python – Google</a></p>
-    <p><a href="java-foundation-certificate.pdf" target="_blank">☕ Java Foundation – Infosys</a></p>
+  <div class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>Personal responsive portfolio to showcase skills, projects, and certifications.</p>
+    <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
   </div>
 </section>
 
-<!-- Resume -->
-<section id="resume">
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="fade-up">
+  <h2>Certifications</h2>
+  <div class="certification-list">
+    <p>🛡️ Network Defense – Cisco</p>
+    <p>🤖 AI Fundamentals</p>
+    <p>☕ Java Foundation – Infosys</p>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="fade-up">
   <h2>Resume</h2>
-  <a href="My_Resume.pdf" download>Download My Resume</a>
+  <a href="My_Resume.pdf" download>Download Resume</a>
 </section>
 
-<!-- Contact -->
-<section id="contact">
+<!-- CONTACT -->
+<section id="contact" class="fade-up">
   <h2>Contact</h2>
-  <p><a href="mailto:bolishettiabhinaya1289@gmail.com">📧 Email</a></p>
-  <p><a href="https://www.linkedin.com/in/abhinaya-bolishetti-441720276/" target="_blank">🔗 LinkedIn</a></p>
-  <p><a href="https://github.com/Abhinaya-Bolishetti" target="_blank">💻 GitHub</a></p>
+  <p><a href="mailto:bolishettiabhinaya1289@gmail.com">Email</a></p>
+  <p><a href="https://www.linkedin.com/in/abhinaya-bolishetti-441720276/" target="_blank">LinkedIn</a></p>
+  <p><a href="https://github.com/Abhinaya-Bolishetti" target="_blank">GitHub</a></p>
 </section>
 
-<!-- Footer -->
 <footer>
-  © 2025 Abhinaya Bolishetti | All Rights Reserved
+  © 2025 Abhinaya Bolishetti
 </footer>
 
 <script src="scripts.js"></script>
 </body>
 </html>
-
-

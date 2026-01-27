@@ -146,3 +146,18 @@ footer {
     display: flex;
   }
 }
+/* Profile Optimization */
+.profile {
+  padding: 1.5rem 1rem;
+}
+
+.profile h1 {
+  margin: 0.5rem 0 0.3rem;
+}
+
+.profile .tagline {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin: 0;
+}
+
